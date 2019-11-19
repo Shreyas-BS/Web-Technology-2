@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"  type="text/css" href="\WT project\WT PROJECT\stylesheet.css">
+
+<style>
+#grad1 {
+    height: 100%;
+    background: orange;
+    
+    background: -moz-linear-gradient(green,yellow); 
+    background: linear-gradient(green,yellow);
+}
+</style>
+
+</head>
+<body>
+<div id="grad1">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="\WT project\pictures\RPG\assc.jpg" style="width:100%">
+  <div class="text">Assasins Creed</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="\WT project\pictures\RPG\btmn.jpg" style="width:100%">
+  <div class="text">Batman Arkham </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="\WT project\pictures\RPG\cry3.jpg" style="width:100%">
+  <div class="text">Far Cry 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="\WT project\pictures\RPG\halo2.jpg" style="width:100%">
+  <div class="text">Halo 2 </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="\WT project\pictures\RPG\gow3.jpg" style="width:100%">
+  <div class="text">God Of War 3</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+
+function OPN(FL)
+{
+var myJSON = JSON.stringify(FL);
+window.location = "game.php?filenm=" + myJSON;
+}
+
+</script>
+
+
+<div style="height:20%;length:100%">
+<ul>
+  <li><a href="\WT project\WT PROJECT\home.html">Home</a></li>
+  <li><a href="TopGames.html">Top Games</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="\WT project\WT PROJECT\action.html">Action</a>
+      <a href="\WT project\WT PROJECT\adv.html">Adventure</a>
+      <a href="\WT project\WT PROJECT\rpg.html">RPG</a>
+       <a href="\WT project\WT PROJECT\fps.html">FPS</a>
+    </div>
+    
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Online Mini Games</a>
+    <div class="dropdown-content">
+      <a href="\WT project\minigames\wallcollider.html">Wall Collider</a>
+      <a href="\WT project\minigames\tictactoe.html">TIC TAC TOE</a>
+      <a href="\WT project\minigames\">Game 2</a>
+       <a href="\WT project\minigames\">Game 3</a>
+    </div>
+    
+  </li>
+</ul>
+</div>
+ 
+<h3 style="border-radius:10%;background-color:grey;width:18%;"> <span class="fa fa-star checked"></span> RPG GAMES
+</h3>
+
+
+</div>
+<div id="ab">
+
+	  <span  class="assc" > <img src="\WT project\pictures\RPG\assc.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Assasins Creed Brotherhood.txt')" ></span>
+	  <h1 style="margin:1%">Assasins Creed Brotherhood</h1>
+	  <h6 style="margin:1%">User Ratings - 9.1/10 </h6>
+	  <p style="margin:1%" >Assassin's Creed Brotherhood is a 2010 action-adventure video game developed by Ubisoft Montreal and published by Ubisoft.[2][3] It is the third major installment in the Assassin's Creed series, a direct sequel to 2009's Assassin's Creed II, and the second chapter in the 'Ezio trilogy'. The game was first released on the PlayStation 3 and Xbox 360 in November and December 2010, and was later made available on Microsoft Windows in March and June 2011.
+
+The plot follows the centuries-old struggle between the Assassins, who fight for peace with free will, and the Templars, who desire peace through control. The framing story is set in the 21st century and features series protagonist Desmond Miles who, with the aid of a machine known as the Animus, relives the memories of his ancestors to find a way to avert the 2012 apocalypse. The main story takes place immediately after the plot of Assassin's Creed II, featuring Assassin Ezio Auditore da Firenze in 16th century Italy and his quest to restore the Assassin order, and destroy his enemies: the Borgia family.</p>
+	  
+</div>
+
+
+<div id="ab">
+
+	  <span  class="btmn" > <img src="\WT project\pictures\RPG\btmn.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Batman Arkham Nights.txt')" ></span>
+	  <h1 style="margin:1%">Batman Arkham Nights</h1>
+	  <h6 style="margin:1%">User Ratings -9.4/10 </h6>
+	  <p style="margin:1%" >Batman: Arkham Knight is a 2015 action-adventure video game developed by Rocksteady Studios and published by Warner Bros. Interactive Entertainment. Based on the DC Comics superhero Batman, it is the successor to the 2013 video game Batman: Arkham Origins, and the fourth main installment in the Batman: Arkham series. Arkham Knight was released worldwide on June 23, 2015 for PlayStation 4, Xbox One and Microsoft Windows.
+
+Written by Sefton Hill, Ian Ball and Martin Lancaster, Arkham Knight is based on the franchise's long-running comic book mythos. Set one year after the events of 2011's Batman: Arkham City, the game's main storyline follows Batman as he confronts Scarecrow, who has launched an attack on Gotham City, causing a citywide evacuation. Scarecrow, with the help of the mysterious Arkham Knight, is also able to unite Batman's greatest foes in an attempt to finally destroy Batman.</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="cry3" > <img src="\WT project\pictures\RPG\cry3.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Crysis 3.txt')" ></span>
+	  <h1 style="margin:1%">Crysis 3</h1>
+	  <h6 style="margin:1%">User Ratings -9.7/10 </h6>
+	  <p style="margin:1%" >Crysis 3 is an open world action-adventure first-person shooter video game developed by Ubisoft Montreal and published by Ubisoft for Microsoft Windows, Xbox 360, and PlayStation 3.[1][2] The game was released on November 29, 2012 in Australia,[3] November 30 in Europe,[4] and December 4 in North America.[5] A stand-alone expansion titled Far Cry 3: Blood Dragon was released on April 30, 2013.
+
+Far Cry 3 is set on a tropical island between the Indian and Pacific Oceans.[6] After a vacation goes awry, protagonist Jason Brody must save his friends, who have been kidnapped by pirates and escape from the island and its unhinged inhabitants.
+
+</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="halo2" > <img src="\WT project\pictures\RPG\halo2.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Halo Wars 2.txt')" ></span>
+	  <h1 style="margin:1%">Halo Wars 2</h1>
+	  <h6 style="margin:1%">User Ratings -9.4/10 </h6>
+	  <p style="margin:1%" >Halo Wars 2 is a 2004 first-person shooter video game developed by Bungie Studios. Released for the Xbox video game console on November 9, 2004,[3] the game is the second installment in the Halo franchise and the sequel to 2001's critically acclaimed Halo: Combat Evolved. A Microsoft Windows version of the game was released on May 31, 2007,[4] developed by an internal team at Microsoft Game Studios known as Hired Gun. The game features a new game engine, as well as using the Havok physics engine; added weapons and vehicles, and new multiplayer maps. The player alternately assumes the roles of the human Master Chief and the alien Arbiter in a 26th-century conflict between the human United Nations Space Command and genocidal Covenant.</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="gow3" ><img src="\WT project\pictures\RPG\gow3.jpg" style="cursor:pointer;width:20%;" onclick="OPN('God Of War 3.txt')"></span>
+	  
+	  <h1 style="margin:1%">God Of War 3</h1>
+	  <h6 style="margin:1%">User Ratings - 9.5/10</h6>
+	  <p style="margin:1%">God of War III is an action-adventure hack and slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). Released for the PlayStation 3 (PS3) console on March 16, 2010, the game is the fifth installment in the God of War series, the seventh chronologically, and the sequel to 2007's God of War II. Loosely based on Greek mythology, the game is set in ancient Greece with vengeance as its central motif. The player controls the protagonist and former God of War Kratos, after his betrayal at the hands of his father Zeus, King of the Olympian Gods. Reigniting the Great War, Kratos ascends Mount Olympus until he is abandoned by the Titan Gaia. Guided by the spirit of Athena, Kratos battles monsters, gods, and Titans in a search for Pandora, without whom he cannot open Pandora's Box, defeat Zeus, and end the reign of the Olympian Gods.</p>
+	  
+</div>
+
+</body>
+</html>

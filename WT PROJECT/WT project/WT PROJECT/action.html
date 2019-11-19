@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"  type="text/css" href="\WT project\WT PROJECT\stylesheet.css">
+
+<style>
+#grad1 {
+    height: 100%;
+    background: orange;
+    
+    background: -moz-linear-gradient(red, yellow); 
+    background: linear-gradient(red, yellow);
+}
+</style>
+
+</head>
+<body>
+<div id="grad1">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="\WT project\pictures\action\gta5.jpg" style="width:100%">
+  <div class="text">GRAND THEFT AUT0 5</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="\WT project\pictures\action\maxp.jpg" style="width:100%">
+  <div class="text">MAX PAYNE 3</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="\WT project\pictures\action\witcher.jpg" style="width:100%">
+  <div class="text">WITCHER 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="\WT project\pictures\action\hitman.jpg" style="width:100%">
+  <div class="text">HITMAN</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="\WT project\pictures\action\resevil.jpg" style="width:100%">
+  <div class="text">RESIDENT EVIL</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+
+function OPN(FL)
+{
+var myJSON = JSON.stringify(FL);
+window.location = "game.php?filenm=" + myJSON;
+}
+
+</script>
+
+
+<div style="height:20%;length:100%">
+<ul>
+  <li><a href="\WT project\WT PROJECT\home.html">Home</a></li>
+  <li><a href="TopGames.html">Top Games</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="\WT project\WT PROJECT\action.html">Action</a>
+      <a href="\WT project\WT PROJECT\adv.html">Adventure</a>
+      <a href="\WT project\WT PROJECT\rpg.html">RPG</a>
+       <a href="\WT project\WT PROJECT\fps.html">FPS</a>
+    </div>
+    
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Online Mini Games</a>
+    <div class="dropdown-content">
+      <a href="\WT project\minigames\wallcollider.html">Wall Collider</a>
+      <a href="\WT project\minigames\tictactoe.html">TIC TAC TOE</a>
+      <a href="\WT project\minigames\">Game 2</a>
+       <a href="\WT project\minigames\">Game 3</a>
+    </div>
+    
+  </li>
+</ul>
+</div>
+ 
+<h3 style="border-radius:10%;background-color:grey;width:18%;"> <span class="fa fa-star checked"></span> ACTION GAMES
+</h3>
+
+
+</div>
+
+<div id="ab">
+	  <span  class="gta5" ><img style="cursor:pointer;width:20%;" onclick="OPN('GTA 5.txt')" src="\WT project\pictures\action\gta5.jpg" ></span>
+	  
+	  <h1 style="margin:1%">Grand Theft Auto 5</h1>
+	  <h6 style="margin:1%">User Ratings - 9.5/10</h6>
+	  <p style="margin:1%">Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 17 September 2013 for PlayStation 3 and Xbox 360, on 18 November 2014 for PlayStation 4 and Xbox One, and on 14 April 2015 for Microsoft Windows. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="witcher" > <img style="cursor:pointer;width:20%;" onclick="OPN('Witcher 3.txt')" src="\WT project\pictures\action\witcher.jpg"  ></span>
+	  <h1 style="margin:1%">Witcher 3</h1>
+	  <h6 style="margin:1%">User Ratings -9/10 </h6>
+	  <p style="margin:1%" >The Witcher 3: Wild Hunt[a] is a 2015 action role-playing video game developed and published by CD Projekt. Based on The Witcher series of fantasy novels by Polish author Andrzej Sapkowski, it is the sequel to the 2011 video game The Witcher 2: Assassins of Kings and the third installment in The Witcher video-game series. Played in an open world with a third-person perspective, players control protagonist Geralt of Rivia. Geralt, a monster hunter known as a Witcher, is looking for his missing adopted daughter, who is on the run from the Wild Hunt: an otherworldly force determined to capture and use her powers. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete main-story and side quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. Its central story has several endings, determined by the player's choices at certain points in the game.</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="maxp" ><img style="cursor:pointer;width:20%;" onclick="OPN('Max Payne 3.txt')" src="\WT project\pictures\action\maxp.jpg" ></span>
+	  
+	  <h1 style="margin:1%">Max Payne 3</h1>
+	  <h6 style="margin:1%">User Ratings - 9.2/10</h6>
+	  <p style="margin:1%">MAX PAYNE 3 is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 17 September 2013 for PlayStation 3 and Xbox 360, on 18 November 2014 for PlayStation 4 and Xbox One, and on 14 April 2015 for Microsoft Windows. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="hitman" ><img style="cursor:pointer;width:20%;" onclick="OPN('Hitman Blood Money.txt')" src="\WT project\pictures\action\hitman.jpg" ></span>
+	  
+	  <h1 style="margin:1%">Hitman Blood Money</h1>
+	  <h6 style="margin:1%">User Ratings - 8.6/10</h6>
+	  <p style="margin:1%">Hitman: Blood Money is a stealth video game developed by IO Interactive and published by Eidos Interactive for Microsoft Windows, PlayStation 2, Xbox and Xbox 360. It is the fourth installment in the Hitman video game series.
+
+The story follows the life of professional hitman, Agent 47, as narrated in cutscenes by a former Director of the FBI to a journalist who is interviewing him. The wheelchair-bound ex-director recounts how his agency tracked 47 over a two-year period. The game also marks 47's arrival to the United States. The game was a commercial success, selling more than 2.1 million copies</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="resevil" ><img style="cursor:pointer;width:20%;" onclick="OPN('Resident Evil.txt')" src="\WT project\pictures\action\resevil.jpg" ></span>
+	  
+	  <h1 style="margin:1%">Resident Evil</h1>
+	  <h6 style="margin:1%">User Ratings - 8.9/10</h6>
+	  <p style="margin:1%">Resident Evil 7: Biohazard[a] is a survival horror video game developed and published by Capcom. The game was released worldwide in January 2017 for Microsoft Windows, PlayStation 4 – with support for the PlayStation VR headset – and Xbox One. It is the eleventh main entry and 24th entry overall in the Resident Evil franchise. It is the first main series installment to be played from a first-person perspective.
+
+The story follows civilian Ethan Winters as he searches for his wife Mia, which leads him to a derelict plantation inhabited by the Baker family. Ethan makes use of weapons and tools in the fight against the Baker family and the "Molded", a humanoid form of bacteria. Healing items are used in the event of injury and there are puzzles that may be solved to further the story. Instead of being action-oriented like Resident Evil 5 and Resident Evil 6, the survival horror element present in earlier installments and exploration took priority</p>
+	  
+</div>
+</body>
+</html>

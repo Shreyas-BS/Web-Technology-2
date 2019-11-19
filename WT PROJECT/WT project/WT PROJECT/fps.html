@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"  type="text/css" href="\WT project\WT PROJECT\stylesheet.css">
+
+<style>
+#grad1 {
+    height: 100%;
+    background: orange;
+    
+    background: -moz-linear-gradient(Blue,cyan); 
+    background: linear-gradient(blue,cyan);
+}
+</style>
+
+</head>
+<body>
+<div id="grad1">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="\WT project\pictures\FPS\dest2.jpg" style="width:100%">
+  <div class="text">Destination 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="\WT project\pictures\FPS\farcry.jpg" style="width:100%">
+  <div class="text">FAR CRY 5</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="\WT project\pictures\FPS\mcomb.jpg" style="width:100%">
+  <div class="text">Modern Combat</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="\WT project\pictures\FPS\tomc.jpg" style="width:100%">
+  <div class="text">TOM CLANCY </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="\WT project\pictures\FPS\wd.jpg" style="width:100%">
+  <div class="text">Watch Dogs</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+function OPN(FL)
+{
+var myJSON = JSON.stringify(FL);
+window.location = "game.php?filenm=" + myJSON;
+}
+
+</script>
+
+
+<div style="height:20%;length:100%">
+<ul>
+  <li><a href="\WT project\WT PROJECT\home.html">Home</a></li>
+  <li><a href="TopGames.html">Top Games</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="\WT project\WT PROJECT\action.html">Action</a>
+      <a href="\WT project\WT PROJECT\adv.html">Adventure</a>
+      <a href="\WT project\WT PROJECT\rpg.html">RPG</a>
+       <a href="\WT project\WT PROJECT\fps.html">FPS</a>
+    </div>
+    
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Online Mini Games</a>
+    <div class="dropdown-content">
+      <a href="\WT project\minigames\wallcollider.html">Wall Collider</a>
+      <a href="\WT project\minigames\tictactoe.html">TIC TAC TOE</a>
+      <a href="\WT project\minigames\">Game 2</a>
+       <a href="\WT project\minigames\">Game 3</a>
+    </div>
+    
+  </li>
+</ul>
+</div>
+ 
+<h3 style="border-radius:10%;background-color:grey;width:18%;"> <span class="fa fa-star checked"></span> First Player Shooter
+</h3>
+
+
+</div>
+<div id="ab">
+
+	  <span  class="wd" > <img src="\WT project\pictures\FPS\wd.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Watch Dogs 2.txt')"></span>
+	  <h1 style="margin:1%">Watch Dogs 2</h1>
+	  <h6 style="margin:1%">User Ratings -8.9/10 </h6>
+	  <p style="margin:1%" >Watch Dogs 2 (stylized as WATCH_DOGS 2) is an action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It is the sequel to 2014's Watch Dogs and was released worldwide for PlayStation 4, Xbox One and Microsoft Windows in November 2016.
+
+Set within a fictionalized version of the San Francisco Bay Area, the game is played from a third-person perspective and its open world is navigated on-foot or by vehicle. Players control Marcus Holloway, a hacker who works with the hacking group DedSec to take down the city's advanced surveillance system known as ctOS. There are multiple ways to complete missions, and each successful assignment increases the follower count of DedSec. Cooperative multiplayer allows for competitive one-on-one combat and connecting with other players in order to neutralize a player who is causing havoc.</p>
+	  
+</div>
+
+
+<div id="ab">
+
+	  <span  class="farcry" > <img src="\WT project\pictures\FPS\farcry.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Far Cry 4.txt')"></span>
+	  <h1 style="margin:1%">FAR CRY 4</h1>
+	  <h6 style="margin:1%">User Ratings -9.6/10 </h6>
+	  <p style="margin:1%" >Far Cry 4 is an action-adventure first-person shooter video game developed by Ubisoft Montreal and published by Ubisoft for the PlayStation 3, PlayStation 4, Xbox 360, Xbox One, and Microsoft Windows. It is the successor to the 2012 video game Far Cry 3, and the fourth main installment in the Far Cry series. The game was released on November 18, 2014.
+
+The game takes place in Kyrat, a fictional Himalayan country. The main story follows Ajay Ghale, a young Kyrati-American, as he is caught in a civil war involving Kyrat's Royal Army, controlled by tyrannical king Pagan Min, and a rebel movement called the Golden Path. Gameplay focuses on combat and exploration; players battle enemy soldiers and dangerous wildlife using a wide array of weapons. The game features many elements found in role-playing games, such as a branching storyline. The game also features a map editor, a co-operative multiplayer mode, and an asymmetrical competitive multiplayer mode.</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="mcomb" > <img src="\WT project\pictures\FPS\mcomb.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Modern Combat.txt')"></span>
+	  <h1 style="margin:1%">Modern Combat</h1>
+	  <h6 style="margin:1%">User Ratings -7.9/10 </h6>
+	  <p style="margin:1%" >Modern Combat 4: Zero Hour is a 2012 first-person shooter developed and published by Gameloft Montreal for iOS, Android, Windows Phone 8, BlackBerry 10 and BlackBerry PlayBook. It is the fourth game in the Modern Combat series, and is a sequel to 2009's Modern Combat: Sandstorm, 2010's Modern Combat 2: Black Pegasus and 2011's Modern Combat 3: Fallen Nation. A sequel was released in 2014, Modern Combat 5: Blackout.
+
+The iOS version of Zero Hour supports the iPhone 5.[6] Gameloft released a gameplay teaser on September 25, 2012, along with a new Modern Combat website. The teaser trailer showed high definition graphics, but with some graphical improvements over its predecessors, such as real-time shadows. Other improvements include more "military support" options, more tactical gameplay and more advanced campaign programming. The game is set in a dystopian year 2037, where the SGS, an undercover armed force, dominates the world and fights against Phantom Unit.
+
+</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="tomc" > <img src="\WT project\pictures\FPS\tomc.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Tom Clancy.txt')" ></span>
+	  <h1 style="margin:1%">Tom Clancy</h1>
+	  <h6 style="margin:1%">User Ratings -9.5/10 </h6>
+	  <p style="margin:1%" >Tom Clancy's Rainbow Six Siege is a tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide on December 2015 for Microsoft Windows, PlayStation 4 and Xbox One. The game puts heavy emphasis on environmental destruction and cooperation between players. Players assume control of an attacker or a defender in different gameplay modes such as hostage rescuing and bomb defusing. The title has no campaign, but features a series of short missions that can be played solo. These missions have a loose narrative, focusing on recruits going through training to prepare them for future encounters with the White Masks, a terrorist group that threatens the safety of the world.</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="dest2" ><img src="\WT project\pictures\FPS\dest2.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Destination 2.txt')"></span>
+	  
+	  <h1 style="margin:1%">Destination 2</h1>
+	  <h6 style="margin:1%">User Ratings - 8.5/10</h6>
+	  <p style="margin:1%">DEstination 2 is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 17 September 2013 for PlayStation 3 and Xbox 360, on 18 November 2014 for PlayStation 4 and Xbox One, and on 14 April 2015 for Microsoft Windows. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.</p>
+	  
+</div>
+
+</body>
+</html>

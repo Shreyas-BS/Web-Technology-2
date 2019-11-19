@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"  type="text/css" href="\WT project\WT PROJECT\stylesheet.css">
+
+<style>
+#grad1 {
+    height: 100%;
+    background: orange;
+    
+    background: -moz-linear-gradient(crimson,ivory); 
+    background: linear-gradient(crimson,ivory);
+}
+</style>
+
+</head>
+<body>
+<div id="grad1">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="\WT project\pictures\adv\gow3.jpg" style="width:100%">
+  <div class="text">God Of War 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="\WT project\pictures\adv\halo2.jpg" style="width:100%">
+  <div class="text">Halo 2</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="\WT project\pictures\adv\maxp.jpg" style="width:100%">
+  <div class="text">Max Payne</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="\WT project\pictures\adv\wd.jpg" style="width:100%">
+  <div class="text">Watch Dogs 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="\WT project\pictures\adv\witcher.jpg" style="width:100%">
+  <div class="text">Witcher 3</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+function OPN(FL)
+{
+var myJSON = JSON.stringify(FL);
+window.location = "game.php?filenm=" + myJSON;
+}
+
+</script>
+
+
+<div style="height:20%;length:100%">
+<ul>
+  <li><a href="\WT project\WT PROJECT\home.html">Home</a></li>
+  <li><a href="TopGames.html">Top Games</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="\WT project\WT PROJECT\action.html">Action</a>
+      <a href="\WT project\WT PROJECT\adv.html">Adventure</a>
+      <a href="\WT project\WT PROJECT\rpg.html">RPG</a>
+       <a href="\WT project\WT PROJECT\fps.html">FPS</a>
+    </div>
+    
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Online Mini Games</a>
+    <div class="dropdown-content">
+      <a href="\WT project\minigames\wallcollider.html">Wall Collider</a>
+      <a href="\WT project\minigames\tictactoe.html">TIC TAC TOE</a>
+      <a href="\WT project\minigames\">Game 2</a>
+       <a href="\WT project\minigames\">Game 3</a>
+    </div>
+    
+  </li>
+</ul>
+</div>
+ 
+<h3 style="border-radius:10%;background-color:grey;width:18%;"> <span class="fa fa-star checked"></span> Adventure Games
+</h3>
+
+
+</div>
+<div id="ab">
+
+	  <span  class="wd" > <img src="\WT project\pictures\adv\gow3.jpg" style="cursor:pointer;width:20%;" onclick="OPN('God Of War 3.txt')" ></span>
+	  <h1 style="margin:1%">God OF WAR 3</h1>
+	  <h6 style="margin:1%">User Ratings -9.5/10 </h6>
+	  <p style="margin:1%" >God of War III is an action-adventure hack and slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). Released for the PlayStation 3 (PS3) console on March 16, 2010, the game is the fifth installment in the God of War series, the seventh chronologically, and the sequel to 2007's God of War II. Loosely based on Greek mythology, the game is set in ancient Greece with vengeance as its central motif. The player controls the protagonist and former God of War Kratos, after his betrayal at the hands of his father Zeus, King of the Olympian Gods. Reigniting the Great War, Kratos ascends Mount Olympus until he is abandoned by the Titan Gaia. Guided by the spirit of Athena, Kratos battles monsters, gods, and Titans in a search for Pandora, without whom he cannot open Pandora's Box, defeat Zeus, and end the reign of the Olympian Gods.</p>
+	  
+</div>
+
+
+<div id="ab">
+
+	  <span  class="farcry" > <img src="\WT project\pictures\adv\halo2.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Halo Wars 2.txt')" ></span>
+	  <h1 style="margin:1%">Halo Wars 2</h1>
+	  <h6 style="margin:1%">User Ratings -9.4/10 </h6>
+	  <p style="margin:1%" >Halo Wars 2 is a 2004 first-person shooter video game developed by Bungie Studios. Released for the Xbox video game console on November 9, 2004,[3] the game is the second installment in the Halo franchise and the sequel to 2001's critically acclaimed Halo: Combat Evolved. A Microsoft Windows version of the game was released on May 31, 2007,[4] developed by an internal team at Microsoft Game Studios known as Hired Gun. The game features a new game engine, as well as using the Havok physics engine; added weapons and vehicles, and new multiplayer maps. The player alternately assumes the roles of the human Master Chief and the alien Arbiter in a 26th-century conflict between the human United Nations Space Command and genocidal Covenant..</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="mcomb" > <img src="\WT project\pictures\adv\maxp.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Max Payne.txt')" ></span>
+	  <h1 style="margin:1%">Max Payne</h1>
+	  <h6 style="margin:1%">User Ratings -8.6/10 </h6>
+	  <p style="margin:1%" >MAX PAYNE 3 is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 17 September 2013 for PlayStation 3 and Xbox 360, on 18 November 2014 for PlayStation 4 and Xbox One, and on 14 April 2015 for Microsoft Windows. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.
+
+</p>
+	  
+</div>
+<div id="ab">
+
+	  <span  class="tomc" > <img src="\WT project\pictures\adv\wd1.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Watch Dogs.txt')" ></span>
+	  <h1 style="margin:1%">Watch Dogs</h1>
+	  <h6 style="margin:1%">User Ratings -9.7/10 </h6>
+	  <p style="margin:1%" >Watch Dogs (stylized as WATCH_DOGS) is an action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide on 27 May 2014 for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360 and Xbox One, while a Wii U version was released in November 2014. Set within a fictionalized version of Chicago, Illinois, the single-player story follows a hacker and his efforts to seek revenge after the killing of his niece. The open world design lets players freely roam the urban city, suburbs, open countryside, and run-down neighborhoods of Chicago.
+
+The game is played from a third-person perspective and its world is navigated on-foot or by vehicle. Players control Aiden Pearce, a grey hat hacker who can hack into the "ctOS", a centralized operating system which manages the hyper-connected city of Chicago, and formed after the Northeast blackout of 2003 was caused by a hacker. An online multiplayer mode is also provided in the game, allowing up to eight players to engage in both cooperative and competitive gameplay in a recreation of the single-player setting.</p>
+	  
+</div>
+<div id="ab">
+	  <span  class="dest2" ><img src="\WT project\pictures\adv\witcher.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Witcher 3.txt')"></span>
+	  
+	  <h1 style="margin:1%">Witcher 3</h1>
+	  <h6 style="margin:1%">User Ratings - 7.9/10</h6>
+	  <p style="margin:1%">The Witcher 3: Wild Hunt[a] is a 2015 action role-playing video game developed and published by CD Projekt. Based on The Witcher series of fantasy novels by Polish author Andrzej Sapkowski, it is the sequel to the 2011 video game The Witcher 2: Assassins of Kings and the third installment in The Witcher video-game series. Played in an open world with a third-person perspective, players control protagonist Geralt of Rivia. Geralt, a monster hunter known as a Witcher, is looking for his missing adopted daughter, who is on the run from the Wild Hunt: an otherworldly force determined to capture and use her powers. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete main-story and side quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. Its central story has several endings, determined by the player's choices at certain points in the game.</p>
+	  
+</div>
+
+</body>
+</html>

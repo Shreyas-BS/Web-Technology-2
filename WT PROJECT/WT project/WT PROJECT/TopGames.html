@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"  type="text/css" href="\WT project\WT PROJECT\stylesheet.css">
+
+<style>
+#grad1 {
+    height: 100%;
+    background: orange;
+    
+    background: -moz-linear-gradient(red, yellow); 
+    background: linear-gradient(red, yellow);
+}
+</style>
+
+</head>
+<body>
+<div id="grad1">
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="\WT project\pictures\action\gta5.jpg" style="width:100%">
+  <div class="text">GRAND THEFT AUT0 5</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="\WT project\pictures\action\maxp.jpg" style="width:100%">
+  <div class="text">MAX PAYNE 3</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="\WT project\pictures\action\witcher.jpg" style="width:100%">
+  <div class="text">WITCHER 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="\WT project\pictures\action\hitman.jpg" style="width:100%">
+  <div class="text">HITMAN</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="\WT project\pictures\action\resevil.jpg" style="width:100%">
+  <div class="text">RESIDENT EVIL</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); 
+}
+
+function OPN(FL)
+{
+var myJSON = JSON.stringify(FL);
+window.location = "game.php?filenm=" + myJSON;
+}
+
+</script>
+
+
+<div style="height:20%;length:100%">
+<ul>
+  <li><a href="\WT project\WT PROJECT\home.html">Home</a></li>
+  <li><a href="TopGames.html">Top Games</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="\WT project\WT PROJECT\action.html">Action</a>
+      <a href="\WT project\WT PROJECT\adv.html">Adventure</a>
+      <a href="\WT project\WT PROJECT\rpg.html">RPG</a>
+       <a href="\WT project\WT PROJECT\fps.html">FPS</a>
+    </div>
+    
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Online Mini Games</a>
+    <div class="dropdown-content">
+      <a href="\WT project\minigames\wallcollider.html">Wall Collider</a>
+      <a href="\WT project\minigames\tictactoe.html">TIC TAC TOE</a>
+      <a href="\WT project\minigames\">Game 2</a>
+       <a href="\WT project\minigames\">Game 3</a>
+    </div>
+    
+  </li>
+</ul>
+</div>
+ </div>
+ 
+<h3 style="border-radius:10%;background-color:grey;width:30%;"> <span class="fa fa-star checked"></span> TOP RATED ACTION GAME
+</h3>
+
+
+
+
+<div id="ab">
+	  <span  class="gta5" ><img style="cursor:pointer;width:20%;" onclick="OPN('GTA 5.txt')" src="\WT project\pictures\action\gta5.jpg" ></span>
+	  
+	  <h1 style="margin:1%">Grand Theft Auto 5</h1>
+	  <h6 style="margin:1%">User Ratings - 9.5/10</h6>
+	  <p style="margin:1%">Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It was released on 17 September 2013 for PlayStation 3 and Xbox 360, on 18 November 2014 for PlayStation 4 and Xbox One, and on 14 April 2015 for Microsoft Windows. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.</p>
+	  
+</div>
+<h3 style="border-radius:10%;background-color:grey;width:30%;"> <span class="fa fa-star checked"></span> TOP RATED ADVENTURE GAME
+</h3>
+
+<div id="ab">
+
+	  <span  class="tomc" > <img src="\WT project\pictures\adv\wd1.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Watch Dogs.txt')" ></span>
+	  <h1 style="margin:1%">Watch Dogs</h1>
+	  <h6 style="margin:1%">User Ratings -9.7/10 </h6>
+	  <p style="margin:1%" >Watch Dogs (stylized as WATCH_DOGS) is an action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide on 27 May 2014 for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360 and Xbox One, while a Wii U version was released in November 2014. Set within a fictionalized version of Chicago, Illinois, the single-player story follows a hacker and his efforts to seek revenge after the killing of his niece. The open world design lets players freely roam the urban city, suburbs, open countryside, and run-down neighborhoods of Chicago.
+
+The game is played from a third-person perspective and its world is navigated on-foot or by vehicle. Players control Aiden Pearce, a grey hat hacker who can hack into the "ctOS", a centralized operating system which manages the hyper-connected city of Chicago, and formed after the Northeast blackout of 2003 was caused by a hacker. An online multiplayer mode is also provided in the game, allowing up to eight players to engage in both cooperative and competitive gameplay in a recreation of the single-player setting.</p>
+	  
+</div>
+
+<h3 style="border-radius:10%;background-color:grey;width:30%;"> <span class="fa fa-star checked"></span> TOP RATED RPG GAME
+</h3>
+
+<div id="ab">
+
+	  <span  class="cry3" > <img src="\WT project\pictures\RPG\cry3.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Crysis 3.txt')" ></span>
+	  <h1 style="margin:1%">Crysis 3</h1>
+	  <h6 style="margin:1%">User Ratings -9.7/10 </h6>
+	  <p style="margin:1%" >Crysis 3 is an open world action-adventure first-person shooter video game developed by Ubisoft Montreal and published by Ubisoft for Microsoft Windows, Xbox 360, and PlayStation 3.[1][2] The game was released on November 29, 2012 in Australia,[3] November 30 in Europe,[4] and December 4 in North America.[5] A stand-alone expansion titled Far Cry 3: Blood Dragon was released on April 30, 2013.
+
+Far Cry 3 is set on a tropical island between the Indian and Pacific Oceans.[6] After a vacation goes awry, protagonist Jason Brody must save his friends, who have been kidnapped by pirates and escape from the island and its unhinged inhabitants.
+
+</p>
+</div>
+	  
+<h3 style="border-radius:10%;background-color:grey;width:30%;"> <span class="fa fa-star checked"></span> TOP RATED FPS GAME
+</h3>
+
+<div id="ab">
+
+	  <span  class="farcry" > <img src="\WT project\pictures\FPS\farcry.jpg" style="cursor:pointer;width:20%;" onclick="OPN('Far Cry 4.txt')"></span>
+	  <h1 style="margin:1%">FAR CRY 4</h1>
+	  <h6 style="margin:1%">User Ratings -9.6/10 </h6>
+	  <p style="margin:1%" >Far Cry 4 is an action-adventure first-person shooter video game developed by Ubisoft Montreal and published by Ubisoft for the PlayStation 3, PlayStation 4, Xbox 360, Xbox One, and Microsoft Windows. It is the successor to the 2012 video game Far Cry 3, and the fourth main installment in the Far Cry series. The game was released on November 18, 2014.
+
+The game takes place in Kyrat, a fictional Himalayan country. The main story follows Ajay Ghale, a young Kyrati-American, as he is caught in a civil war involving Kyrat's Royal Army, controlled by tyrannical king Pagan Min, and a rebel movement called the Golden Path. Gameplay focuses on combat and exploration; players battle enemy soldiers and dangerous wildlife using a wide array of weapons. The game features many elements found in role-playing games, such as a branching storyline. The game also features a map editor, a co-operative multiplayer mode, and an asymmetrical competitive multiplayer mode.</p>
+	  
+</div>
+
+</body>
+</html>
